@@ -94,6 +94,14 @@ set(SRC20
     two_chapter/is_space.cc
 )
 
+set(SRC21
+    one_chapter/test_datastruct.cpp
+)
+
+set(SRC22
+    one_chapter/test_functional.cpp
+)
+
 
 
 
@@ -120,5 +128,9 @@ add_executable(chapter17 ${SRC17})
 add_executable(chapter18 ${SRC18})
 add_executable(chapter19 ${SRC19})
 add_executable(chapter20 ${SRC20})
+add_executable(chapter21 ${SRC21})
+add_executable(chapter22 ${SRC22})
+
+
 
 
