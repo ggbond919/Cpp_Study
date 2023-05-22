@@ -78,6 +78,23 @@ set(SRC16
     one_chapter/test_cast.cpp
 )
 
+set(SRC17
+    one_chapter/test_string.cpp
+)
+
+set(SRC18
+    two_chapter/replace_space.cc
+)
+
+set(SRC19
+    two_chapter/left_words.cc
+)
+
+set(SRC20
+    two_chapter/is_space.cc
+)
+
+
 
 
 
@@ -99,5 +116,9 @@ add_executable(chapter13 ${SRC13})
 add_executable(chapter14 ${SRC14})
 add_executable(chapter15 ${SRC15})
 add_executable(chapter16 ${SRC16})
+add_executable(chapter17 ${SRC17})
+add_executable(chapter18 ${SRC18})
+add_executable(chapter19 ${SRC19})
+add_executable(chapter20 ${SRC20})
 
 
