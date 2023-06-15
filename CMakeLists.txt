@@ -4,9 +4,10 @@ option(BUILD_TEST "ON for complile test" ON)
 
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -std=c++11 -O0 -fstandalone-debug -Wall") 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -rdynamic -fPIC") 
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated -Wno-deprecated-declarations")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated -Wno-deprecated-declarations")
 
 include_directories(.)
+include_directories(one_chapter/.)
 set(SRC01
     #one_chapter/test_inlinefunc.cpp
     one_chapter/main.cpp
@@ -30,9 +31,9 @@ set(SRC04
     one_chapter/test_class.cpp
 )
 
-set(SRC05
-    one_chapter/test_static.cpp
-)
+# set(SRC05
+#     one_chapter/test_static.cpp
+# )
 
 set(SRC06
     one_chapter/test_const.cpp
@@ -102,6 +103,20 @@ set(SRC22
     one_chapter/test_functional.cpp
 )
 
+set(SRC23
+    one_chapter/test_ptr.cpp
+)
+
+set(SRC24
+    one_chapter/test_static.cpp
+    one_chapter/test_static_main.cpp
+)
+
+set(SRC25
+    one_chapter/test_variable.c
+)
+
+
 
 
 
@@ -112,7 +127,7 @@ add_executable(chapter02 ${SRC02})
 add_executable(chapter03 ${SRC03})
 add_executable(chapter03_1 ${SRC03_1})
 add_executable(chapter04 ${SRC04})
-add_executable(chapter05 ${SRC05})
+# add_executable(chapter05 ${SRC05})
 add_executable(chapter06 ${SRC06})
 add_executable(chapter07 ${SRC07})
 add_executable(chapter08 ${SRC08})
@@ -130,6 +145,9 @@ add_executable(chapter19 ${SRC19})
 add_executable(chapter20 ${SRC20})
 add_executable(chapter21 ${SRC21})
 add_executable(chapter22 ${SRC22})
+add_executable(chapter23 ${SRC23})
+add_executable(chapter24 ${SRC24})
+add_executable(chapter25 ${SRC25})
 
 
 
